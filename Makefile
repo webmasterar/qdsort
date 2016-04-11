@@ -9,13 +9,13 @@ else
 endif
 
 CC = gcc
-CFLAGS = -Wall -g -msse3 -O3 -fomit-frame-pointer -funroll-loops -lm -I .
+CFLAGS = -msse3 -O3 -fomit-frame-pointer -funroll-loops -lm -I .
 
 all: main$(EXT)
-	$(CC) $(CFLAGS) -o main$(EXT) main.o qdsort.o
+	$(CC) $(CFLAGS) -o main$(EXT) main.o qtsort.o
 
 main$(EXT):
-	$(CC) $(CFLAGS) -c main.c qdsort.c
+	$(CC) $(CFLAGS) -c main.c qtsort.c
 
 clean:
 	$(RM) main.o main$(EXT)

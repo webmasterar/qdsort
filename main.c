@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <qdsort.h>
+#include <qtsort.h>
 
 void usage()
 {
@@ -33,7 +33,7 @@ int main(int argc, char * argv[])
 
     printf("%s\n", x);
 
-    qdsort_chars(x);
+    qtsort_chars(x);
 
     printf("%s\n", x);
 
